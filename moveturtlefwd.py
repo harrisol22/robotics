@@ -4,7 +4,7 @@ import rospy
 from geometry_msgs.msg import Twist
 
 def mover():
-     pub=rospy.Publisher('/gazebo/cmd_vel', Twist, queue_size=1)
+     pub=rospy.Publisher('/cmd_vel', Twist, queue_size=1)
      rospy.init_node('moveturtlefwd')
      straight_twist=Twist()
      straight_twist.linear.x=1
