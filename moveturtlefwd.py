@@ -7,9 +7,9 @@ def mover():
      pub=rospy.Publisher('/cmd_vel', Twist, queue_size=1)
      rospy.init_node('moveturtlefwd')
      straight_twist=Twist()
-     straight_twist.linear.x=1
+     straight_twist.linear.x=.5
      turn_twist=Twist()
-     turn_twist.angular.z=0.5
+     turn_twist.angular.z=0.3
      rate=rospy.Rate(10)
      change_time=rospy.Time.now()
      turning=False
